@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+
+*{
+    --clr-primary: #ddeeed;
+    --clr-secondary: #041833;
+    --clr-accent: #157aff;
+    --transistion: all 0.2s;
+    
+    box-sizing: border-box;
+    font-family: 'Manrope', 'sans-serif';
+    transition: var(--transistion);
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    justify-items: center;
+    grid-template-rows: max-content max-content max-content max-content;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding-top: 0.5rem;
+    color: var(--clr-secondary);
+    background: var(--clr-primary);
+}
+
+section{ width: 35rem; }
+
+a{ 
+    color: var(--clr-secondary);
+    text-decoration: none; 
+}
+
+a:hover{
+    color: var(--clr-accent);
+    transform: translateY(-2px);
+}
+
+
+.flx-center{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#links{
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+#links > .flx-center{ gap: 1.5rem; }
+
+#links a{ font-size: 1.3rem; }
+
+.stack{ list-style: none; }
+
+.stack li{ color: var(--clr-accent); }
+
+.project h4, ul{
+    margin: 0;
+}
